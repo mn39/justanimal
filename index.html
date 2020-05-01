@@ -202,7 +202,14 @@
           src="#"
           alt="your image"
         />
-        <div class="equaldiv"><h1 class="equal">=</h1></div>
+        <div class="equaldiv">
+          <h1 class="equal">
+            =
+          </h1>
+          <h2 class="aiprocess">
+            AI가 유사한 동물을 찾는 중입니다...
+          </h2>
+        </div>
 
         <div class="result-image"></div>
         <div id="label-container"></div>
@@ -331,8 +338,6 @@
 
       // Load the image model and setup the webcam
       async function init() {
-        $(".answer").text("AI가 유사한 동물을 찾는 중입니다...");
-
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -387,6 +392,8 @@
           if (mx4 == -1) mx4 = i;
           if (prediction[mx4].probability < prediction[i].probability) mx4 = i;
         }
+
+        $(".aiprocess").hide();
         $(".result-image").html(
           "<img src = ./sumnail/" + prediction[mx1].className + "/img1.jpg>"
         );
