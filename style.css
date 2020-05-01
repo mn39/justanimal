@@ -281,5 +281,6 @@ h5 {
 }
 
 .kakao-down-ads {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
