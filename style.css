@@ -135,6 +135,7 @@ body {
 }
 .navbar-light .navbar-brand {
   font-family: NanumsquareR;
+  font-weight: bold;
   line-height: 1.68;
   text-align: left;
   color: #35465d;
