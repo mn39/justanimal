@@ -331,6 +331,8 @@
 
       // Load the image model and setup the webcam
       async function init() {
+        $(".answer").text("AI가 유사한 동물을 찾는 중입니다...");
+
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
