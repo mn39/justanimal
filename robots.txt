@@ -1,0 +1,2 @@
+User-agent: *Allow:/
+Sitemap: https://justanimal.netlify.app/sitemap.xml
