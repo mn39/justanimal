@@ -269,7 +269,13 @@ h5 {
 }
 
 .maded {
+  background-color: #f6f7fa;
+  color: #35465d;
   font-weight: bold;
   right: 5px;
-  bottom: 5px;
+  font-size: 0.7rem;
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
